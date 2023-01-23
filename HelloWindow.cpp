@@ -14,7 +14,8 @@
 // inclui tipos básicos e funções da API Win32
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
-#include <windowsx.h>                                 // extensões do windows
+#include "Resources.h"
+                         
 
 // protótipo do procedimento da janela
 LRESULT CALLBACK WinProc (HWND, UINT, WPARAM, LPARAM);
@@ -34,8 +35,8 @@ int APIENTRY WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance,
      wndclass.cbClsExtra    = 0;
      wndclass.cbWndExtra    = 0;
      wndclass.hInstance     = hInstance;
-     wndclass.hIcon         = LoadIcon (NULL, IDI_APPLICATION);
-     wndclass.hCursor       = LoadCursor (NULL, IDC_ARROW);
+     wndclass.hIcon = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_ICON));
+     wndclass.hCursor = LoadCursor(hInstance, MAKEINTRESOURCE(IDC_CURSOR));
      wndclass.hbrBackground = (HBRUSH) GetStockObject (WHITE_BRUSH);
      wndclass.lpszMenuName  = NULL;
      wndclass.lpszClassName = "BasicWindow";
