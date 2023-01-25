@@ -1,5 +1,5 @@
-## Universidade Federal Rural Do Semi-Árido - Mossoró- RN
-## Curso Da Ciência da Computação
-### Disciplina De PROGRAMAÇÃO DE JOGOS em 2D 
-### Prof. Dr. Judson Santiago
- 
+#  DISCIPLINA programação de jogos 2D
+### Conteudo da Disciplina do Professor judson Santiago
+### Bacharelado em Ciência da Computação
+### Universidade Federal Rural do Semi-Àrido - UFERSA 
+### MOSSORÓ - RN
